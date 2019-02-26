@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>amt</id>
+    <version>11.0</version>
+    <packageSourceUrl>https://github.com/belidzs/chocolatey-amt</packageSourceUrl>
+    <owners>belidzs</owners>
+    <title>AMT - Auto-Movie-Thumbnailer (Install)</title>
+    <authors>Karsten Funk</authors>
+    <projectUrl>http://www.amt.cc</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/belidzs/chocolatey-amt/icons/amt_icon_64.png</iconUrl>
+    <copyright>2006-2018 AMT - Auto-Movie-Thumbnailer Karsten Funk</copyright>
+    <licenseUrl>http://creativecommons.org/licenses/by-nc-nd/3.0</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://funk.eu/wp-content/plugins/download-monitor/download.php?id=246</projectSourceUrl>
+    <tags>amt auto-movie-thumbnailer video</tags>
+    <summary>THE Batch Movie ScreenCap Creator…</summary>
+    <description>THE Batch Movie ScreenCap Creator… Create ScreenCaps of
+
+– any number of movies,
+– located anywhere on your computer,
+– manually or with a time-scheduler,
+– with a free to choose number of caps,
+– the ability to ignore already processed files,
+– a customizable design
+– and most important, it allows you to do it in Batch Mode!
+ 
+AMT is THE Batch Movie ScreenCap Creator!
+
+The AMT – Auto-Movie-Thumbnailer is an automation GUI to batch create ScreenCaps, Thumbnail Index Pictures, Preview Pictures or Contact Sheets for any given number of movies. It supports many different input (AVI, MPG, Quicktime, Real-Media, Windows-Media,….) formats, in fact every input format that is supported by MPlayer.
+
+Additionally AMT offers you a huge number of possibilities to customize the design and layout of the ScreenCaps.
+
+AMT works by remotely controlling the MPlayer, some applications of the ImageMagick Suite and a MediaInfo plugin to perform the screenshoting and Picture creation.</description>
+    <releaseNotes>– Fixed – Slow processing speed, because for “Custom” header MediaInfo was extracted from every file before “Skip” check
+– Fixed – Frame around single picture not displayed anymore with geometry 3×3, now set to 4×4
+– Updated MPlayer to r38116
+– Updated SQLite to 3.25.1
+– Updated ImageMagick to 6.9.9-51-portable-Q16-x86</releaseNotes>
+    <dependencies>
+      <dependency id="autohotkey.portable" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
