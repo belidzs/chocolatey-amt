@@ -9,6 +9,7 @@ winTitleInstall = AMT - Auto-Movie-Thumbnailer
 
 WinWait, %winTitleLanguage%,,300
 WinActivate, %winTitleLanguage%
+Control, ChooseString, English, ComboBox1
 ControlClick, OK,%winTitleLanguage%,,,, NA
 WinWait, %winTitleInstall%,,5
 WinActivate, %winTitleInstall%
